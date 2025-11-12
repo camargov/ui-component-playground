@@ -1,0 +1,9 @@
+.container {
+	cursor: pointer;
+	border-radius: 100%;
+	padding: 4px;
+}
+
+.container:hover {
+	background-color: gainsboro;
+}
