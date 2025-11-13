@@ -1,0 +1,41 @@
+.container {
+	list-style-type: none;
+	border: none;
+	font-weight: bold;
+	padding: 0px;
+	background-color: gainsboro;
+	border-top-right-radius: 25px;
+	height: 100vh;
+}
+
+.container li {
+	padding: 12px 15vw 12px 24px;
+	border-top-right-radius: 25px;
+}
+
+.container li:hover {
+	cursor: pointer;
+	background-color: rgb(155, 155, 155);
+}
+
+.container a {
+	text-decoration: none;
+	color: black;
+}
+
+.default {
+	background-color: gainsboro;
+	border-bottom: 1px solid gray;
+}
+
+.default a {
+	color: black;
+}
+
+.selected {
+	background-color: gray;
+}
+
+.selected a {
+	color: white;
+}

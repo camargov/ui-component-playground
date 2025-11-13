@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/navbar/navbar";
+import SideNavigation from "@/components/side-navigation/side-navigation";
+import { UI_COMPONENT_PAGES } from "@/util/util-functions";
 
 export const metadata: Metadata = {
 	title: "UI Component Library",
@@ -13,7 +16,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				<Navbar />
+				<div style={{ display: "flex", gap: "64px", marginTop: "32px" }}>
+					<SideNavigation componentPages={UI_COMPONENT_PAGES} />
+					<div style={{ paddingTop: "4px" }}>{children}</div>
+				</div>
+			</body>
 		</html>
 	);
 }
